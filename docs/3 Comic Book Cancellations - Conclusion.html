@@ -11792,7 +11792,7 @@ div#notebook {
 <h2 id="2.2-Cancellation-Classification">2.2 Cancellation Classification<a class="anchor-link" href="#2.2-Cancellation-Classification">&#182;</a></h2><p>Classifying distinct comic book runs is nontrivial. Titles are not always consistent and may change to reflect the story. Even the numbering system may have odd jumps and changes. Often a series may start with a #1 and increment sequentially for a couple of months, only to later revert to a legacy numbering system. Some titles may also have an extended break before a new creative team restarts the series, whereas long-running titles may change creative teams and make major story changes without any interruption in the numbering.</p>
 <p>For my analysis, I considered a distinct run to start whenever there was a #1 issue, and that each run could be distinguished from each other by its title and starting year.</p>
 <p>At the same time, not every book that ends is cancelled. Fig. 1 shows that the majority of titles end after one or only a few issues, too short of a time to receive feedback from their sales. As such, they must have always been planned to be that length. Similarly, long running titles may have a change in creative team to create fresh jumping on points rather than being cancelled for sales.</p>
-<p><img src="/Figures/Max Issue Histogram.png" alt="Max Issue Histogram"><p />
+<p><img src="./Figures/Max Issue Histogram.png" alt="Max Issue Histogram"><p />
 <strong>Fig. 1</strong> Based on ending length, Marvel comics appear to fall into several categories: (1) one-shots, (2) events and mini-series that run less than 6 issues, (3) ongoing titles that are immediately cancelled around 12 issues, and (4) ongoing titles that continue past 12 issues.</p>
 <p>I have no way of determining how each series ended without manually going through each title. However, it appears in Fig. 1 that the 12th month is a common dropping point for new series. In order to focus on books that end due to cancellation, I will specifically look at what factors cause a book to be cancelled or kept past this 12th month threshold.</p>
 
@@ -11813,7 +11813,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/Figures\Decision Tree.png" alt="Cancellation Criteria"><p/>
+<p><img src="./Figures/Decision Tree.png" alt="Cancellation Criteria"><p/>
 <strong>Fig. 2</strong> The 1st month's units sales and 12th month's gross sales were found to be the two most important features determining cancellation. The light background color shows the prediction of the classifier, whereas individual points refer to individual series. Blue is for titles that were kept and red is for cancelled titles.</p>
 
 </div>
@@ -11842,7 +11842,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/Figures\Kids Comics.png" alt="Kids Comics"> <p/>
+<p><img src="./Figures/Kids Comics.png" alt="Kids Comics"> <p/>
 <strong>Fig. 3</strong> Plot of cancelled and kept titles over the two most important features. Select books targeting children and teens are emphasized with large stars. Books were primarily labelled as for kids or teens if they had select keywords in their title (i.e. "Marvel Adventures", "Ultimate", "Young"). Many of the titles with the lowest sales that have not been cancelled target kids or teens.</p>
 
 </div>
@@ -11870,7 +11870,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/Figures\Diversity Comics.png" alt="Diversity Comics"><p/>
+<p><img src="./Figures/Diversity Comics.png" alt="Diversity Comics"><p/>
 <strong>Fig. 4</strong> Plot of cancelled and kept titles. The large stars highlight the series that were cancelled in early 2017 and a select group of long-lasting comics with diverse leads.</p>
 
 </div>
